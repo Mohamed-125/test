@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <a href="https://wa.me/+9660570861628" target="_blank" class="phone-link">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <nav class="container mobile-nav">
+      <img src="./imgs/logo.png" style="z-index: 10000" />
+      <div class="nav-links">
+        <a href="#1"> الشاحن المغناطيسي 1-3 </a>
+        <a href="#2">محفظه الهاتف </a>
+        <a href="#3"> الشاحن المغناطيسي </a>
+        <a href="#4">محول الوصلات - type c converter </a>
+        <a href="#5"> ميداليه التتبع</a>
+      </div>
+      <i class="fa-solid menu-icon fa-bars"></i>
+      <div class="mobile-links">
+        <a href="#1"> الشاحن المغناطيسي 1-3 </a>
+        <a href="#2">محفظه الهاتف </a>
+        <a href="#3"> الشاحن المغناطيسي </a>
+        <a href="#4">محول الوصلات - type c converter </a>
+        <a href="#5"> ميداليه التتبع</a>
+      </div>
+    </nav>
+
+    <script>
+      const nav = document.querySelector("nav");
+      const menuIcon = document.querySelector(".menu-icon");
+      const mobileLinks = document.querySelectorAll(".mobile-links a");
+      active = false;
+      const checkOpen = (e) => {
+        if (active) {
+          nav.classList.add("active");
+          document.body.style.overflow = "hidden";
+        } else {
+          nav.classList.remove("active");
+          document.body.style.overflow = "auto";
+        }
+      };
+      menuIcon.onclick = (e) => {
+        active = !active;
+        checkOpen();
+      };
+      [...mobileLinks].forEach((link) => {
+        link.onclick = (e) => {
+          active = false;
+          checkOpen();
+        };
+      });
+    </script>
+
+    <div class="container special-container" id="1">
+      <div>
+        <h2>الشاحن المغناطيسي 1-3</h2>
+        <p class="sub-title">
+          الان يمكنك شحن هاتفك المحمول او سماعاتك بكل سهوله وفي اي وقت
+        </p>
+      </div>
+      <img
+        style="max-width: 800px"
+        src="/imgs/المنتج الثاني/2E3C8CF2-2F31-4C20-8D88-912E62E1E5C1.png"
+      />
+    </div>
+    <div class="container">
+      <div>
+        <p style="padding-top: 30px">
+          باستخدام الشاحن لاسلكي و المغناطيسي يمكنك شحن اجهزتك مثل هاتفك و
+          سماعاتك لاسلكيا الشاحن المغناطيسي صغير الحجم ويمكنك ان تاخذه في اي
+          مكان بدون اخذ اي مساحه كما انه يمكنك استحدام منتجنا كشاحن وحامل للهاتف
+          في نفس الوقت
+        </p>
+      </div>
+      <img
+        style="max-height: 550px; object-fit: contain"
+        src="./imgs/المنتج الثاني/BFE51966-2009-49DB-83FF-6245375990AA.png"
+      />
+    </div>
+    <div class="container flex-reverse">
+      <div>
+        <p style="padding-top: 50px">
+          يمكنك شحن هاتفين و ساعه او سماعه في نفس الوقت بدون اي مشاكل
+        </p>
+      </div>
+      <img
+        style="max-height: 550px; object-fit: contain"
+        src="./imgs/المنتج الثاني/C9A64667-64E0-4CD8-AF2C-D803F6C6710A.png"
+      />
+    </div>
+    <div class="container">
+      <div>
+        <p style="padding-top: 30px">
+          تصميم مميز و صغير في الحجم ولا ياخذ مساحه كبيره لكي تستطيع التنقل به
+          في اي مكان وفي اي وقت بكل سهوله
+        </p>
+      </div>
+      <img
+        style="max-height: 550px; object-fit: contain"
+        src="./imgs/المنتج الثاني/AEC82B63-6F68-4E69-A0AD-38A38D4D01BA.jpeg"
+      />
+    </div>
+    <button style="margin-bottom: 30px">اشتر الان ب 168 ريال فقط</button>
+    <div class="container special-container" id="2">
+      <div>
+        <h2>محفظه الهاتف</h2>
+        <p class="sub-title">الان يمكنك الوصول الي اموالك بكل سهوله وامان</p>
+      </div>
+      <img
+        style="max-width: 800px"
+        src="/imgs/المنتج الاول/4030082C-3EF5-4AEA-A1F8-BF40C43FE87C.jpeg"
+      />
+    </div>
+    <div class="container">
+      <div>
+        <p style="padding-top: 30px; height: fit-content">
+          يمكنك الان الوصول الي كل بطاقاتك واموالك بكل سهوله وامان عن الطريق
+        </p>
+        <div>الخاص بك بكل سهوله iphone محفظتنا يمكنك وضع محتفظتنا علي ال</div>
+        <p>
+          محفظتنا مصنعه من اجود انواع الجلد الطبيعي ولا تقلق المحفظه يوجد فيها
+          مغناطيس قوي لضمان بقاء محفظتك مرتبطه بهاتفك في كل الظروف
+        </p>
+      </div>
+      <img
+        src="/imgs/المنتج الاول/C7BD71E9-7C46-450D-8AF9-3DBFE4F4540E.jpeg
+      "
+      />
+    </div>
+    <div class="container special-container" id="">
+      <div>
+        <h2>لدينا العديد من الاحجام والاوان المناسبه لكل الاذواق</h2>
+      </div>
+      <img
+        style="max-width: 800px"
+        src="/imgs/المنتج الاول/4E013846-1D73-4E9E-9C2F-69E5BB6D7552.jpeg"
+      />
+
+      <img
+        style="max-width: 800px"
+        src="/imgs/المنتج الاول/BA222ECE-2647-43C7-9F34-576B46C58E3E.jpeg"
+      />
+      <button>اشتر الان ب 49 ريال فقط</button>
+    </div>
+
+    <div class="container special-container" id="3">
+      <div>
+        <h2>الشاحن المغناطيسي</h2>
+        <p class="sub-title">
+          الان يمكنك شحن هاتفك المحمول او سماعاتك بكل سهوله وفي اي وقت
+        </p>
+      </div>
+      <img
+        style="max-width: 800px"
+        src="/imgs/المنتج الثالث/9D0A8054-12B2-4BC7-916D-F0CA45D3D626.png"
+      />
+    </div>
+    <div class="container">
+      <div>
+        <p style="padding-top: 30px">
+          باستخدام الشاحن لاسلكي و المغناطيسي يمكنك شحن اجهزتك مثل هاتفك و
+          سماعاتك لاسلكيا الشاحن المغناطيسي صغير الحجم ويمكنك ان تاخذه في اي
+          مكان بدون اخذ اي مساحه
+        </p>
+      </div>
+      <img
+        style="max-height: 550px; object-fit: contain"
+        src="./imgs/المنتج الثالث/0279035C-1099-4D61-85F6-6937498951D9.jpeg"
+      />
+    </div>
+    <div class="container flex-reverse">
+      <div>
+        <p style="padding-top: 50px">
+          يمكنك شحن هاتفين و ساعه او سماعه في نفس الوقت بدون اي مشاكل
+        </p>
+      </div>
+      <img
+        style="max-height: 550px; object-fit: contain"
+        src="./imgs/المنتج الثالث/F3024B3C-6B79-42B5-B52F-15E1AE5B7FFE.png"
+      />
+    </div>
+    <div class="container special-container" id="">
+      <div>
+        <h2>فيديو للمنتج</h2>
+      </div>
+      <video
+        style="max-width: 800px"
+        autoplay
+        muted
+        controls
+        loop
+        src="/imgs/المنتج الثالث/FullSizeRender.mov"
+      ></video>
+    </div>
+    <button style="margin-bottom: 30px">اشتر الان ب 145 ريال فقط</button>
+
+    <div class="container special-container" id="4">
+      <div>
+        <h2>محول الوصلات الي type c converter - type c</h2>
+        <p class="sub-title">
+          الان يمكنك تحويل USB 2.0 , USB 3.0 الي USB type C
+        </p>
+      </div>
+      <img
+        style="max-width: 800px; object-fit: contain; max-height: 350px"
+        src="/imgs/المنتج الرابع/DB672B9E-8EFD-47E3-B43B-FD7FD0057149.png"
+      />
+    </div>
+    <div class="container">
+      <div>
+        <p style="padding-top: 30px">
+          يمكنك تحويل الان ما يصل الي 4 usb الي type c بكل سهوله وسرعه المحول
+          شديد السرعه و عالي الجوده ويمكنك الاعتماد عليه في جميع الاوقات
+        </p>
+      </div>
+      <img
+        style="max-width: 800px; object-fit: cover; max-height: 400px"
+        src="/imgs/المنتج الرابع/9D71E254-BBCA-411D-ADF2-C18128FE9FF5.png"
+      />
+    </div>
+    <div class="container flex-reverse">
+      <div>
+        <p style="padding-top: 50px">
+          يمكنك شحن هاتفين و ساعه او سماعه في نفس الوقت بدون اي مشاكل
+        </p>
+      </div>
+      <img
+        style="max-width: 800px; object-fit: cover; max-height: 400px"
+        src="/imgs/المنتج الرابع/A9F70CB3-342B-4351-8CB8-DB59C85107FB.png"
+      />
+    </div>
+    <button style="margin-bottom: 30px">اشتر الان ب 119 ريال فقط</button>
+
+    <div class="container special-container" id="5">
+      <div>
+        <h2>ميداليه التتبع</h2>
+        <p class="sub-title">يمكنك الان تتبع مقتياتك الثمينه في حاله السرقه</p>
+      </div>
+      <img
+        style="max-width: 800px; object-fit: contain; max-height: 350px"
+        src="/imgs/المنتج الخامس/43CA1C55-83DF-49F8-806C-3A26CEF991EC.png"
+      />
+    </div>
+    <div class="container">
+      <div>
+        <p style="padding-top: 30px">
+          ميداليه التتبع هي ميداليه تستطيع وضها علي هاتفك , حيوانك الاليف , شنطه
+          اولادك للتتبع موقعهم والتاكد انهم في امان كما ان باستخدام هذه
+          الميداليه يمكنك تتبع ممتلكاتك اذا تم سرقتها
+        </p>
+      </div>
+      <img
+        style="max-width: 800px; object-fit: contain; max-height: 500px"
+        src="/imgs/المنتج الخامس/BDF57A84-6876-4D4E-975C-EB6C4C3ED4FE.png   "
+      />
+    </div>
+    <div class="container flex-reverse">
+      <div>
+        <p style="padding-top: 50px">
+          جوده عاليه و الاوان مختلفه متعدده لجميع الازواق
+        </p>
+      </div>
+      <img
+        style="max-width: 800px; object-fit: contain; max-height: 400px"
+        src="/imgs/المنتج الخامس/B1D74720-C58A-4E7A-8142-7BA1AE0D8BA4.png"
+      />
+    </div>
+    <button style="margin-bottom: 30px">اشتر الان ب 39 ريال فقط</button>
+  </body>
+</html>
